@@ -38,7 +38,7 @@ Garantir que os fluxos principais da aplicação funcionem corretamente, proporc
 |------|-------------------------------|-------------------------------|-----------------------------------------------------|------------------------------------------------|----------------------------------------------|
 | TC09 | Checkout com carrinho vazio   | Carrinho vazio                | 1. Faça o Login <br>2. Clique em "Add to Cart" <br>3. Clique no icone de Cart <br>4. Insira credenciais válidas no formulário <br>5. Clique em "Finish" | Exibe mensagem "Carrinho vazio". | ❌ Fail - Checkout permitido com carrinho vazio.|
 | TC10 | Checkout com credenciais válidas | Carrinho com itens           | 1. Faça o Login <br>2. Clique em "Add to Cart" <br>3. Clique no icone de Cart <br>4. Insira credenciais válidas no formulário. <br>5. Clique em "Finish" | Pedido finalizado com sucesso.                 | ✅ Pass                                   |
-| TC11 | Checkout com postal code inválido | Carrinho com itens           | 1. Faça o Login <br>2. Clique em "Add to Cart" <br>3. Clique no icone de Cart <br>4. Insira letras no campo de código postal. | Exibe mensagem de erro para entrada inválida.   | ❌ Fail - Permite letras no código postal. |
+| TC11 | Checkout com postal code inválido | Carrinho com itens           | 1. Faça o Login <br>2. Clique em "Add to Cart" <br>3. Clique no icone de Cart <br>4. Insira letras no campo de código postal. | Exibe mensagem de erro para entrada inválida.   | ❌ Fail - Permite letras no código postal. | 
 
 ### 2.4 Filtro
 | ID   | Descrição                     | Pré-condição           | Passos                                               | Resultado Esperado                              | Resultado Real                                   |
@@ -60,7 +60,17 @@ Garantir que os fluxos principais da aplicação funcionem corretamente, proporc
 
 ---
 
-## 4. Melhorias UX/UI
+## 4. Evidências
+- Mensagem de Erro Cortada
+![Mensagem De Erro Cortada](https://github.com/user-attachments/assets/4a7ec188-62e0-4c7f-965c-ce9c3e3c51b2)
+- Nenhuma Mensagem de Carrinho Vazio
+![Nenhuma Mensagem de Carrinho Vazio](https://github.com/user-attachments/assets/9cbe9c14-817c-45f1-bb98-bb8cb5e8219e)
+- Checkout com carrinho vazio
+https://github.com/user-attachments/assets/12fe5c49-2bed-432e-8761-c0e6f1cdcbec
+- Aceitando Código Postal Inválido
+https://github.com/user-attachments/assets/80bc5cbf-793d-43f0-924f-c6949d6a7d4c
+
+## 5. Melhorias UX/UI
 - **Mensagem de erro no login**: Mensagem cortada prejudica clareza.
 - **Produto com nome técnico**: Substituir `test.allthethings()` por um nome mais comercial.
 - **Carrinho vazio**: Bloquear finalização de compra se o carrinho estiver vazio.
@@ -68,16 +78,16 @@ Garantir que os fluxos principais da aplicação funcionem corretamente, proporc
 
 ---
 
-## 5. Análise de Riscos
+## 6. Análise de Riscos
 - **Risco Funcional**: Checkout vazio pode causar problemas financeiros e de estoque.
 - **Risco UX/UI**: Mensagens de erro inadequadas podem confundir os usuários.
 - **Risco Reputacional**: Produtos com nomes técnicos podem parecer inacabados para o cliente final.
 
 ---
 
-## 6. Extras
+## 7. Extras
 
-### 6.1 Sugestões de Automação
+### 7.1 Sugestões de Automação
 - Automatizar fluxos críticos usando Cypress:
   - Login
   - Fluxo de compra
