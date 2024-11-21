@@ -50,8 +50,7 @@ Garantir que os fluxos principais da aplicação funcionem corretamente, proporc
 
 ## 3. Resultados dos Testes
 
-### 3.1 Resultado Geral
-### 5.1 Resumo Geral
+### 3.1 Resumo Geral
 | Categoria       | Total Testes | Pass | Fail | 
 |-----------------|--------------|------|------|
 | Login           | 4            | 4    | 0    |
