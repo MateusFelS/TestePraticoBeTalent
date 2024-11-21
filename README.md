@@ -68,7 +68,7 @@ Este plano abrange a validação da API **Restful-Booker**, utilizada para geren
 ---
 
 ## 6. Bugs Encontrados
-- Algumas requisições estão com códigos diferentes do padrão, o que pode causar confusão
+- Algumas requisições estão com códigos diferentes do padrão, o que pode afetar seriamente a confiabilidade, a integração e a manutenção de sistemas.
 
 ---
 
