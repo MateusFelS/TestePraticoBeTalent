@@ -6,7 +6,7 @@
 Garantir que os fluxos principais da aplicação funcionem corretamente, proporcionando uma experiência de usuário satisfatória e sem problemas funcionais.
 
 ### 1.2 Escopo
-- **Funcionalidade**: Login, navegação, compra.
+- **Funcionalidade**: Login, navegação, compra, filtros.
 - **UI/UX**: Identificação de elementos confusos ou inconsistentes.
 
 ### 1.3 Ambiente de Teste
