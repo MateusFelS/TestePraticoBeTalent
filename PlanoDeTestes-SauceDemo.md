@@ -61,7 +61,7 @@ Garantir que os fluxos principais da aplicação funcionem corretamente, proporc
 ---
 
 ## 4. Evidências
-- Mensagem de Erro Cortada: ![Mensagem De Erro Cortada](https://github.com/user-attachments/assets/4a7ec188-62e0-4c7f-965c-ce9c3e3c51b2)
+- Mensagem de Erro Cortada: <br>![Mensagem De Erro Cortada](https://github.com/user-attachments/assets/4a7ec188-62e0-4c7f-965c-ce9c3e3c51b2)
 
 - Nenhuma Mensagem de Carrinho Vazio: ![Nenhuma Mensagem de Carrinho Vazio](https://github.com/user-attachments/assets/9cbe9c14-817c-45f1-bb98-bb8cb5e8219e)
 
