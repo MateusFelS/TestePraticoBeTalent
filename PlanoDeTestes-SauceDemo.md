@@ -61,17 +61,13 @@ Garantir que os fluxos principais da aplicação funcionem corretamente, proporc
 ---
 
 ## 4. Evidências
-- Mensagem de Erro Cortada
-![Mensagem De Erro Cortada](https://github.com/user-attachments/assets/4a7ec188-62e0-4c7f-965c-ce9c3e3c51b2)
+- Mensagem de Erro Cortada: ![Mensagem De Erro Cortada](https://github.com/user-attachments/assets/4a7ec188-62e0-4c7f-965c-ce9c3e3c51b2)
 
-- Nenhuma Mensagem de Carrinho Vazio
-![Nenhuma Mensagem de Carrinho Vazio](https://github.com/user-attachments/assets/9cbe9c14-817c-45f1-bb98-bb8cb5e8219e)
+- Nenhuma Mensagem de Carrinho Vazio: ![Nenhuma Mensagem de Carrinho Vazio](https://github.com/user-attachments/assets/9cbe9c14-817c-45f1-bb98-bb8cb5e8219e)
 
-- Checkout com carrinho vazio
-https://github.com/user-attachments/assets/12fe5c49-2bed-432e-8761-c0e6f1cdcbec
+- Checkout com carrinho vazio: https://github.com/user-attachments/assets/12fe5c49-2bed-432e-8761-c0e6f1cdcbec
 
-- Aceitando Código Postal Inválido
-https://github.com/user-attachments/assets/80bc5cbf-793d-43f0-924f-c6949d6a7d4c
+- Aceitando Código Postal Inválido: https://github.com/user-attachments/assets/80bc5cbf-793d-43f0-924f-c6949d6a7d4c
 
 ## 5. Melhorias UX/UI
 - **Mensagem de erro no login**: Mensagem cortada prejudica clareza.
