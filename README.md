@@ -15,9 +15,9 @@ Garantir que os fluxos principais da aplicação funcionem corretamente, proporc
 
 ---
 
-## 3. Casos de Teste
+## 2. Casos de Teste
 
-### 3.1 Login
+### 2.1 Login
 | ID   | Descrição                          | Pré-condição            | Passos                                                                 | Resultado Esperado                              | Resultado Real                                   |
 |------|------------------------------------|-------------------------|------------------------------------------------------------------------|------------------------------------------------|-------------------------------------------------|
 | TC01 | Login com credenciais válidas      | Página de login aberta  | 1. Insira credenciais válidas. <br> 2. Clique em "Login".              | Redirecionado para a página de produtos.       | ✅ Pass                                         |
@@ -25,7 +25,7 @@ Garantir que os fluxos principais da aplicação funcionem corretamente, proporc
 | TC03 | Login com campos em branco         | Página de login aberta  | 1. Deixe campos em branco. <br> 2. Clique em "Login".                  | Exibe mensagem de erro apropriada.            | ✅ Pass                                         |
 | TC04 | Tentar acessar página sem login    | Página protegida        | 1. Acesse diretamente a URL da página de produtos sem login.           | Redirecionado para a página de login.          | ✅ Pass                                         |
 
-### 3.2 Carrinho
+### 2.2 Carrinho
 | ID   | Descrição                    | Pré-condição               | Passos                                               | Resultado Esperado                              | Resultado Real                                   |
 |------|------------------------------|----------------------------|-----------------------------------------------------|------------------------------------------------|-------------------------------------------------|
 | TC05 | Adicionar item ao carrinho   | Página de produtos aberta  | 1. Faça o Login <br>2. Clique em "Add to Cart".     | Item adicionado ao carrinho com sucesso.       | ✅ Pass                                         |
@@ -33,14 +33,14 @@ Garantir que os fluxos principais da aplicação funcionem corretamente, proporc
 | TC07 | Carrinho vazio               | Carrinho vazio             | 1. Faça o Login <br>2. Clique no icone de Cart.    | Exibe mensagem "Carrinho vazio".               | ❌ Fail - Nenhuma mensagem é retornada          |
 | TC08 | Soma de preços no carrinho   | Carrinho com itens         | 1. Faça o Login <br>2. Clique em "Add to Cart" <br>3. Clique no icone de Cart <br>4. Verifique a soma dos preços. | Soma dos preços exibida corretamente.          | ✅ Pass   |
 
-### 3.3 Checkout
+### 2.3 Checkout
 | ID   | Descrição                     | Pré-condição                  | Passos                                               | Resultado Esperado                              | Resultado Real                                   |
 |------|-------------------------------|-------------------------------|-----------------------------------------------------|------------------------------------------------|----------------------------------------------|
 | TC09 | Checkout com carrinho vazio   | Carrinho vazio                | 1. Faça o Login <br>2. Clique em "Add to Cart" <br>3. Clique no icone de Cart <br>4. Insira credenciais válidas no formulário <br>5. Clique em "Finish" | Exibe mensagem "Carrinho vazio". | ❌ Fail - Checkout permitido com carrinho vazio.|
 | TC10 | Checkout com credenciais válidas | Carrinho com itens           | 1. Faça o Login <br>2. Clique em "Add to Cart" <br>3. Clique no icone de Cart <br>4. Insira credenciais válidas no formulário. <br>5. Clique em "Finish" | Pedido finalizado com sucesso.                 | ✅ Pass                                   |
 | TC11 | Checkout com postal code inválido | Carrinho com itens           | 1. Faça o Login <br>2. Clique em "Add to Cart" <br>3. Clique no icone de Cart <br>4. Insira letras no campo de código postal. | Exibe mensagem de erro para entrada inválida.   | ❌ Fail - Permite letras no código postal. |
 
-### 3.4 Filtro
+### 2.4 Filtro
 | ID   | Descrição                     | Pré-condição           | Passos                                               | Resultado Esperado                              | Resultado Real                                   |
 |------|-------------------------------|------------------------|-----------------------------------------------------|------------------------------------------------|-------------------------------------------------|
 | TC12 | Filtro por preço              | Página de produtos aberta | 1. Faça o Login <br>2. Selecione um filtro no dropdown. | Produtos são ordenados corretamente.           | ✅ Pass                                  |
@@ -48,9 +48,9 @@ Garantir que os fluxos principais da aplicação funcionem corretamente, proporc
 
 ---
 
-## 4. Resultados dos Testes
+## 3. Resultados dos Testes
 
-### 4.1 Tabela Resumida
+### 3.1 Tabela Resumida
 | Cenário                  | Resultado |
 |--------------------------|-----------|
 | Login                   | ⚠️ Pequenas falhas de UI. |
@@ -60,7 +60,7 @@ Garantir que os fluxos principais da aplicação funcionem corretamente, proporc
 
 ---
 
-## 5. Melhorias UX/UI
+## 4. Melhorias UX/UI
 - **Mensagem de erro no login**: Mensagem cortada prejudica clareza.
 - **Produto com nome técnico**: Substituir `test.allthethings()` por um nome mais comercial.
 - **Carrinho vazio**: Bloquear finalização de compra se o carrinho estiver vazio.
@@ -68,16 +68,16 @@ Garantir que os fluxos principais da aplicação funcionem corretamente, proporc
 
 ---
 
-## 6. Análise de Riscos
+## 5. Análise de Riscos
 - **Risco Funcional**: Checkout vazio pode causar problemas financeiros e de estoque.
 - **Risco UX/UI**: Mensagens de erro inadequadas podem confundir os usuários.
 - **Risco Reputacional**: Produtos com nomes técnicos podem parecer inacabados para o cliente final.
 
 ---
 
-## 7. Extras
+## 6. Extras
 
-### 7.1 Sugestões de Automação
+### 6.1 Sugestões de Automação
 - Automatizar fluxos críticos usando Cypress:
   - Login
   - Fluxo de compra
