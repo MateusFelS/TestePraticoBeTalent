@@ -2,7 +2,7 @@
 
 Este repositório contém dois planos de testes detalhados para aplicações distintas. Abaixo estão os links e uma breve descrição de cada um:
 
-## 1. [SwagLabs.md](PlanoDeTestes-SwagLabs.md)
+## 1. [SwagLabs.md](SwagLabs.md)
 
 Este plano de testes é focado na automação de testes para a aplicação **Swag Labs**. O arquivo descreve os testes realizados na interface do usuário (UI) e em funcionalidades principais, como:
 
