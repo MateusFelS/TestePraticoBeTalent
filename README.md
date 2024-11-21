@@ -51,12 +51,19 @@ Este plano abrange a validação da API **Restful-Booker**, utilizada para geren
 
 ## 5. Resultados Obtidos
 
-### 5.1 Resumo
+### 5.1 Resumo Geral
 | Categoria              | Total | Pass | Fail |
 |------------------------|-------|------|------|
 | Autenticação           | 2     | 2    | 0    |
 | Gestão de Reservas     | 5     | 5    | 0    |
 | Filtros e Buscas       | 3     | 3    | 0    |
+
+### 5.2 Resultados Detalhados
+
+| Cenário                              | Resultado                         | 
+|--------------------------------------|-----------------------------------|
+| **Criar nova reserva**               | ⚠️ Pass, mas retornou 200 ao invés de 201 |
+| **Deletar reserva existente**        | ⚠️ Pass, mas retornou 201 ao invés de 200 |
 
 ---
 
@@ -66,8 +73,8 @@ Este plano abrange a validação da API **Restful-Booker**, utilizada para geren
 ---
 
 ## 7. Evidencias
-- Post com código 200 - OK: ![image](https://github.com/user-attachments/assets/ff535fa0-ee57-4742-82d4-0b24428c2b55)
-- Delete com código 201 - Created: ![Sem título](https://github.com/user-attachments/assets/ea411bdf-3edc-4cc2-a159-fecee35dd4bf)
+- Post com código 200 - OK ao invés de 201 - Created: ![image](https://github.com/user-attachments/assets/ff535fa0-ee57-4742-82d4-0b24428c2b55)
+- Delete com código 201 - Created ao invés de 200 - OK: ![Sem título](https://github.com/user-attachments/assets/ea411bdf-3edc-4cc2-a159-fecee35dd4bf)
 
 ## 8. Considerações Finais
 
