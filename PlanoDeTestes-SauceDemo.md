@@ -50,7 +50,16 @@ Garantir que os fluxos principais da aplicação funcionem corretamente, proporc
 
 ## 3. Resultados dos Testes
 
-### 3.1 Tabela Resumida
+### 3.1 Resultado Geral
+### 5.1 Resumo Geral
+| Categoria       | Total Testes | Pass | Fail | 
+|-----------------|--------------|------|------|
+| Login           | 4            | 4    | 0    |
+| Carrinho        | 4            | 3    | 1    | 
+| Checkout        | 3            | 1    | 2    | 
+| Filtro          | 2            | 1    | 0    | 
+
+### 3.2 Resultado Detalhado
 | Cenário                  | Resultado |
 |--------------------------|-----------|
 | Login                   | ⚠️ Pequenas falhas de UI. |
