@@ -1,4 +1,4 @@
-# Planos de Testes
+# Teste Prático - Be Talent
 
 Este repositório contém dois planos de testes detalhados para aplicações distintas. Abaixo estão os links e uma breve descrição de cada um:
 
