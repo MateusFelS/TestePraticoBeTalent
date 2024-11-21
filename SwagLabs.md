@@ -1,4 +1,4 @@
-# Plano de Testes - Sauce Demo
+# Plano de Testes - Swag Labs
 
 ## 1. Plano de Testes
 
