@@ -1,4 +1,4 @@
-# Plano de Testes - Swag Labs
+# Relatório de Execução de Testes - Swag Labs
 
 ## 1. Plano de Testes
 
