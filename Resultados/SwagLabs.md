@@ -62,8 +62,8 @@ Garantir que os fluxos principais da aplicação funcionem corretamente, proporc
 | Cenário                  | Resultado |
 |--------------------------|-----------|
 | Login                   | ⚠️ Pequenas falhas de UI. |
-| Carrinho                | ❌ Checkout com carrinho vazio permitido. |
-| Checkout                | ❌ Código postal inválido aceito. |
+| Carrinho                | ❌ Nenhuma mensagem de "Carrinho Vazio" é retornada|
+| Checkout                | ❌ Código postal inválido aceito e Checkout com carrinho vazio permitido. |
 | Filtro                  | ⚠️ Nome de produto inconsistente. |
 
 ---
