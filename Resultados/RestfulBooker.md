@@ -1,12 +1,12 @@
 # Relatório de Execução de Testes de API - Restful-Booker
 
-## 1. Objetivo
+## 1. Plano de Testes
+
+## 1.1 Objetivo
 O objetivo é garantir que a API funcione corretamente, forneça respostas consistentes e trate erros de forma apropriada. Além disso, busca-se identificar possíveis falhas que possam impactar a experiência do usuário ou causar problemas no sistema integrado.
 
-## 2. Escopo
+## 1.2 Escopo
 Este relatório abrange a validação da API **Restful-Booker**, utilizada para gerenciar reservas em um sistema hoteleiro. O teste foca em verificar a funcionalidade dos principais endpoints antes da integração com o front-end, validando requisitos de autenticação, gestão de reservas e buscas, e assegurando a conformidade com os padrões de resposta HTTP.
-
----
 
 ## 3. Ambiente de Teste
 
