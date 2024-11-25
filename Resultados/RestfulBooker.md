@@ -8,12 +8,12 @@ O objetivo é garantir que a API funcione corretamente, forneça respostas consi
 ## 1.2 Escopo
 Este relatório abrange a validação da API **Restful-Booker**, utilizada para gerenciar reservas em um sistema hoteleiro. O teste foca em verificar a funcionalidade dos principais endpoints antes da integração com o front-end, validando requisitos de autenticação, gestão de reservas e buscas, e assegurando a conformidade com os padrões de resposta HTTP.
 
-## 3. Ambiente de Teste
+## 1.3 Ambiente de Teste
 
-### 3.1 Ferramenta Utilizada
+### 1.3.1 Ferramenta Utilizada
 - **Postman**: Ferramenta escolhida para execução e automação dos testes.
 
-### 3.2 Variáveis de Ambiente Configuradas
+### 1.3.2 Variáveis de Ambiente Configuradas
 - **Base URL**: `https://restful-booker.herokuapp.com`
 - **Token**: Gerado durante o teste de autenticação e armazenado como variável.
 
