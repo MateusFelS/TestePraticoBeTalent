@@ -19,9 +19,9 @@ Este relatório abrange a validação da API **Restful-Booker**, utilizada para 
 
 ---
 
-## 4. Casos de Teste
+## 2. Casos de Teste
 
-### 4.1 Autenticação
+### 2.1 Autenticação
 | ID       | Cenário                              | Passos                                                                                         | Resultado Esperado                | Resultado Real     |
 |----------|--------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------------|--------------------|
 | TC01     | Gerar token de autenticação          | 1. Enviar requisição para `/auth` com credenciais válidas.<br>2. Verificar se o token é gerado.| Retorno HTTP 200 e token gerado.  | ✅ Pass            |
@@ -29,7 +29,7 @@ Este relatório abrange a validação da API **Restful-Booker**, utilizada para 
 
 ---
 
-### 4.2 Gestão de Reservas
+### 2.2 Gestão de Reservas
 | ID       | Cenário                         | Passos                                                                                         | Resultado Esperado                | Resultado Real     |
 |----------|---------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------------|--------------------|
 | TC03     | Criar nova reserva              | 1. Enviar requisição POST para `/booking` com dados válidos.<br>2. Verificar retorno e dados.  | Retorno HTTP 201 com ID gerado.   | ⚠️ Pass, mas retornou 200 - OK ao invés de 201 - Created |
@@ -40,7 +40,7 @@ Este relatório abrange a validação da API **Restful-Booker**, utilizada para 
 
 ---
 
-### 4.3 Filtros e Buscas
+### 2.3 Filtros e Buscas
 | ID       | Cenário                          | Passos                                                                                         | Resultado Esperado                | Resultado Real     |
 |----------|----------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------------|--------------------|
 | TC08     | Buscar reservas por nome         | 1. Enviar requisição GET para `/booking` com query `?firstname=John`.<br>2. Verificar resultado.| Retorno HTTP 200 com resultados. | ✅ Pass            |
@@ -49,16 +49,16 @@ Este relatório abrange a validação da API **Restful-Booker**, utilizada para 
 
 ---
 
-## 5. Resultados Obtidos
+## 3. Resultados Obtidos
 
-### 5.1 Resumo Geral
+### 3.1 Resumo Geral
 | Categoria              | Total | Pass | Fail |
 |------------------------|-------|------|------|
 | Autenticação           | 2     | 2    | 0    |
 | Gestão de Reservas     | 5     | 5    | 0    |
 | Filtros e Buscas       | 3     | 3    | 0    |
 
-### 5.2 Resultados Detalhados
+### 3.2 Resultados Detalhados
 
 | Cenário                              | Resultado                         | 
 |--------------------------------------|-----------------------------------|
@@ -67,19 +67,19 @@ Este relatório abrange a validação da API **Restful-Booker**, utilizada para 
 
 ---
 
-## 6. Bugs Encontrados
+## 4. Bugs Encontrados
 - Algumas requisições estão com códigos diferentes do padrão, o que pode afetar seriamente a confiabilidade, a integração e a manutenção de sistemas.
 
 ---
 
-## 7. Evidencias
+## 5. Evidencias
 - Post com código 200 - OK ao invés de 201 - Created: ![image](https://github.com/user-attachments/assets/ff535fa0-ee57-4742-82d4-0b24428c2b55)
 - Delete com código 201 - Created ao invés de 200 - OK: ![Sem título](https://github.com/user-attachments/assets/ea411bdf-3edc-4cc2-a159-fecee35dd4bf)
 
-## 8. Considerações Finais
+## 6. Considerações Finais
 
-### 8.1 Dificuldades Encontradas
+### 6.1 Dificuldades Encontradas
 - Nenhuma dificuldade significativa identificada.
 
-### 8.2 Próximos Passos
+### 6.2 Próximos Passos
 - Automatizar os cenários de teste utilizando alguma ferramenta como o próprio **Postman** ou um framework como **Cypress**.
